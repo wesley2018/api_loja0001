@@ -1,0 +1,23 @@
+endereço: 
+http://okaysistemas.net.br/loja0001/api/
+
+GET:
+*Usuário:
+-Trazer todos os usuários:
+http://okaysistemas.net.br/loja0001/api/usuario
+Entrada: nenhum
+Retorno: 
+public class RootObject
+{
+    public int _id { get; set; }
+    public string _usuario { get; set; }
+    public string _senha { get; set; }
+    public string _email { get; set; }
+    public object _error { get; set; }
+}
+
+-Gravar um usuário:
+http://okaysistemas.net.br/loja0001/api/usuario
+Entrada: "/?usuario=" + usuario + "&senha=" + senha + "&email=" + email; 
+Retorno: True
+
